@@ -269,10 +269,7 @@ influence_expenditure_claims_late = {
 		is_allowed_to_make_claims = yes
 		not = { has_country_flag = saving_influence_arcology }
 		years_passed > @str_ai_will_not_declare_war_until
-		NOR = {
-	 			has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_pacifist
-}
+		is_pacifist = no
 		resource_stockpile_compare = {
 			resource = influence
 			value > 250

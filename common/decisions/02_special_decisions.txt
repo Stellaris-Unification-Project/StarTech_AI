@@ -19,8 +19,8 @@ decision_prospect = {
 		NOR = {
 			is_planet_class = pc_machine
 			is_planet_class = pc_hive
+			is_planet_class = pc_city
 		}
-		NOT = { is_planet_class = pc_city }
 		owner = {
 			has_active_tradition = tr_adaptability_finish
 		}
@@ -270,8 +270,6 @@ decision_slave_colony = {
 		NOR = {
 			is_planet_class = pc_city
 			has_modifier = resort_colony
-		}
-		NOR = {
 			has_modifier = penal_colony
 			has_modifier = slave_colony
 		}
@@ -354,8 +352,8 @@ decision_resort_colony = {
 		NOR = {
 			has_modifier = penal_colony
 			has_modifier = slave_colony
+			is_planet_class = pc_city
 		}
-		NOT = { is_planet_class = pc_city }
 		owner = {
 			is_regular_empire = yes
 		}
@@ -1853,8 +1851,8 @@ decision_project_cornucopia = {
 		NOR = {
 			is_planet_class = pc_machine
 			is_planet_class = pc_hive
+			is_planet_class = pc_city
 		}
-		NOT = { is_planet_class = pc_city }
 		owner = {
 			is_galactic_community_member = yes
 			is_active_resolution = "resolution_industry_project_cornucopia"

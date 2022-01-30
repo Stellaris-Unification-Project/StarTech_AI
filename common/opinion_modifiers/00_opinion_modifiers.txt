@@ -228,10 +228,7 @@ opinion_xenophobes = {
 
 		modifier = {
 			add = -10
-			NOR = {
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_xenophobe"
-			}
+			is_xenophobe = no
 			NOT = { has_civic = civic_machine_terminator }
 			FROM = { has_ethic = "ethic_xenophobe" }
 			exists = from.species
@@ -239,10 +236,7 @@ opinion_xenophobes = {
 		}
 		modifier = {
 			add = -5
-			NOR = {
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_xenophobe"
-			}
+			is_xenophobe = no
 			NOT = { has_civic = civic_machine_terminator }
 			FROM = { has_ethic = "ethic_xenophobe" }
 			exists = from.species
@@ -272,10 +266,7 @@ opinion_xenophobes = {
 
 		modifier = {
 			add = -20
-			NOR = {
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_xenophobe"
-			}
+			is_xenophobe = no
 			NOT = { has_civic = civic_machine_terminator }
 			FROM = { has_ethic = "ethic_fanatic_xenophobe" }
 			exists = from.species
@@ -283,10 +274,7 @@ opinion_xenophobes = {
 		}
 		modifier = {
 			add = -10
-			NOR = {
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_xenophobe"
-			}
+			is_xenophobe = no
 			NOT = { has_civic = civic_machine_terminator }
 			FROM = { has_ethic = "ethic_fanatic_xenophobe" }
 			exists = from.species
@@ -967,10 +955,7 @@ opinion_nuker = {
 		base = 0
 		modifier = {
 			add = -5
-			NOR = {
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
-			}
+			is_militarist = no
 			is_country_type = default
 		}
 		modifier = {
