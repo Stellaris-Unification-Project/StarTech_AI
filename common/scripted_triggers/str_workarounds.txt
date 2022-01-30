@@ -2,8 +2,7 @@ str_is_allowed_to_build_outposts = {
 	or = {
 		years_passed < @str_years_of_guaranteed_truce
 		years_passed > @str_ai_will_not_declare_war_until_aggressive
-		has_ethic = ethic_pacifist
-		has_ethic = ethic_fanatic_pacifist
+		is_pacifist = yes
 		has_ethic = ethic_xenophile
 		has_valid_civic = civic_fanatic_purifiers
 		has_valid_civic = civic_machine_assimilator

@@ -16,8 +16,10 @@ decision_prospect = {
 
 	potential = {
 		is_artificial = no
-		NOT = { is_planet_class = pc_machine }
-		NOT = { is_planet_class = pc_hive }
+		NOR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_hive
+		}
 		NOT = { is_planet_class = pc_city }
 		owner = {
 			has_active_tradition = tr_adaptability_finish
@@ -191,8 +193,10 @@ decision_penal_colony = {
 
 	potential = {
 		is_capital = no
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		owner = {
 			is_regular_empire = yes
 		}
@@ -263,10 +267,14 @@ decision_slave_colony = {
 
 	potential = {
 		is_capital = no
-		NOT = { is_planet_class = pc_city }
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = penal_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			is_planet_class = pc_city
+			has_modifier = resort_colony
+		}
+		NOR = {
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
 		owner = {
 			is_regular_empire = yes
 		}
@@ -343,8 +351,10 @@ decision_resort_colony = {
 
 	potential = {
 		is_capital = no
-		NOT = { has_modifier = penal_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
 		NOT = { is_planet_class = pc_city }
 		owner = {
 			is_regular_empire = yes
@@ -469,7 +479,7 @@ decision_consecrated_worlds = {
 	potential = {
 		exists = space_owner
 		exists = from
-		space_owner = { is_same_value = from }
+		is_owned_by = from
 		from = {
 			has_ascension_perk = ap_consecrated_worlds
 		}
@@ -1840,8 +1850,10 @@ decision_project_cornucopia = {
 
 	potential = {
 		is_artificial = no
-		NOT = { is_planet_class = pc_machine }
-		NOT = { is_planet_class = pc_hive }
+		NOR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_hive
+		}
 		NOT = { is_planet_class = pc_city }
 		owner = {
 			is_galactic_community_member = yes
@@ -1922,8 +1934,10 @@ decision_upgrade_habitat = {
 			limit = {
 				owner = {
 					has_ascension_perk = ap_voidborn
-					NOT = { has_technology = tech_habitat_3 }
-					NOT = { has_tech_option = tech_habitat_3 }
+					NOR = {
+						has_technology = tech_habitat_3
+						has_tech_option = tech_habitat_3
+					}
 				}
 			}
 			owner = {

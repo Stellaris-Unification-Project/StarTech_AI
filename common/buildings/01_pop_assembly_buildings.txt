@@ -378,9 +378,9 @@ building_necrophage_elevation_chamber = {
 		exists = owner
 		OR = {
 			owner = {
-				OR = {
-					NOT = { has_origin = origin_necrophage }
-					NOT = { has_trait = trait_necrophage }
+				NAND = {
+					has_origin = origin_necrophage
+					has_trait = trait_necrophage
 				}
 			}
 			AND = {
@@ -547,9 +547,9 @@ building_necrophage_house_of_apotheosis = {
 		exists = owner
 		OR = {
 			owner = {
-				OR = {
-					NOT = { has_origin = origin_necrophage }
-					NOT = { has_trait = trait_necrophage }
+				NAND = {
+					has_origin = origin_necrophage
+					has_trait = trait_necrophage
 				}
 			}
 			AND = {

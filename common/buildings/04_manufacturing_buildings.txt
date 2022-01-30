@@ -7,8 +7,10 @@ building_foundry_1 = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 
 	allow = {
@@ -1183,8 +1185,10 @@ building_refinery = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		building_basic_income_check = yes
 	}
 
@@ -1295,8 +1299,10 @@ building_chemical_plant = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		building_basic_income_check = yes
 	}
 
@@ -1406,8 +1412,10 @@ building_crystal_plant = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		building_basic_income_check = yes
 	}
 

@@ -174,10 +174,7 @@ country_event = {
 				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_militarist
 			}
-			NOR = {
-				has_ethic = ethic_fanatic_xenophobe
-				has_ethic = ethic_xenophobe
-			}
+			is_xenophobe = no
 		}
 	}
 	option = {

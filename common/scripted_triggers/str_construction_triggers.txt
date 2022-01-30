@@ -262,10 +262,7 @@ str_research_destroy = {
 	}
 	exists = owner
 	owner = {
-		nor = {
-			has_ethic = ethic_pacifist
-			has_ethic = ethic_fanatic_pacifist
-		}
+		is_pacifist = no
 		is_ai = yes
 		lategame = yes
 		or = {
@@ -1199,10 +1196,7 @@ str_stronghold_potential = {
 		owner = { is_ai = no }
 		and = {
 			owner = {
-				nor = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+				is_pacifist = no
 			}
 			or = {
 				nor = {

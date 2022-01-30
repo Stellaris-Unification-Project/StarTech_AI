@@ -7,8 +7,10 @@ building_research_lab_1 = {
 	category = research
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 
 	destroy_trigger = {
@@ -379,8 +381,10 @@ building_institute = {
 	category = research
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		exists = owner
 		owner = { is_regular_empire = yes }
 		or = {

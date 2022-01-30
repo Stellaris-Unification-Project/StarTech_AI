@@ -84,10 +84,8 @@ tech_basic_science_lab_3 = {
 		}
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -206,10 +204,8 @@ tech_curator_lab = {
 		factor = 5 #scaling factor
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -288,10 +284,8 @@ tech_archeology_lab_ancrel = {
 		factor = 5 #scaling factor
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -473,10 +467,8 @@ tech_space_science_3 = {
 		}
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -516,10 +508,8 @@ tech_space_science_4 = {
 		weight = 1
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -567,10 +557,8 @@ tech_space_science_5 = {
 		factor = 25 #scaling factor
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_energy_torpedoes_2
-			}
-			NOT ={
 				has_technology = tech_energy_torpedoes_2
 			}
 		}
@@ -646,10 +634,8 @@ tech_physics_1 = {
 		}
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -900,10 +886,8 @@ tech_cryostasis_2 = {
 		factor = 25 #scaling factor
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_energy_torpedoes_2
-			}
-			NOT ={
 				has_technology = tech_energy_torpedoes_2
 			}
 		}
@@ -2809,10 +2793,8 @@ tech_power_hub_2 = {
 		factor = 25 #scaling factor
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}

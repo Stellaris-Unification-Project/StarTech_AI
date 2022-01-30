@@ -826,11 +826,7 @@ curator_think_tank = {
 			solar_system = { has_star_flag = enclave }
 		}
 		owner = {
-			NOR = {
-				has_valid_civic = civic_fanatic_purifiers
-				has_valid_civic = civic_hive_devouring_swarm
-				has_valid_civic = civic_machine_terminator
-			}
+			is_homicidal = no
 		}
 	}
 
@@ -918,11 +914,7 @@ art_college = {
 			solar_system = { has_star_flag = enclave }
 		}
 		owner = {
-			NOR = {
-				has_valid_civic = civic_fanatic_purifiers
-				has_valid_civic = civic_hive_devouring_swarm
-				has_valid_civic = civic_machine_terminator
-			}
+			is_homicidal = no
 		}
 	}
 

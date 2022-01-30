@@ -57,7 +57,7 @@ habitat_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"

@@ -295,7 +295,7 @@ str_can_use_basic_plan = {
 		str_consumer_goods_crisis_1 = yes
 		and = {
 			lategame = yes
-			nor = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist }
+			is_pacifist = no
 		}
 	}
 }

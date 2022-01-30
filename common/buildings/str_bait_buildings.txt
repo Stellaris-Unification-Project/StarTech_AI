@@ -13,8 +13,10 @@ building_str_ai_research_lab = {
 	category = pop_assembly
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		str_force_ai_research_lab = yes
 		has_upgraded_capital = yes
 		owner = {

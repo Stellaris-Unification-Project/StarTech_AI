@@ -879,16 +879,10 @@ farming_subsidies = {
 		weight = @EdictMedPrio
 		modifier = {
 			factor = 0
-			or = {
-				not = {
-					has_edict = capacity_subsidies
-				}
-				not = {
-					has_edict = mining_subsidies
-				}
-				not = {
-					has_edict = fortify_the_border
-				}
+			NAND = {
+				has_edict = capacity_subsidies
+				has_edict = mining_subsidies
+				has_edict = fortify_the_border
 			}
 		}
 	}
@@ -972,16 +966,10 @@ forge_subsidies = {
 		weight = @EdictLowPrio
 		modifier = {
 			factor = 0
-			or = {
-				not = {
-					has_edict = capacity_subsidies
-				}
-				not = {
-					has_edict = mining_subsidies
-				}
-				not = {
-					has_edict = fortify_the_border
-				}
+			NAND = {
+				has_edict = capacity_subsidies
+				has_edict = mining_subsidies
+				has_edict = fortify_the_border
 			}
 		}
 	}

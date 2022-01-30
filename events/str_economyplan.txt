@@ -10,7 +10,7 @@ event = {
 			limit = {
 				years_passed < @str_years_of_extended_truce
 			}
-			every_country = {
+			every_playable_country = {
 				limit = {
 					is_ai = no
 					or = { 
@@ -191,7 +191,7 @@ event = {
 			}
 		}
 	}
-	every_country = {
+	every_playable_country = {
 		limit = {
 			is_ai = no
 			or = {
@@ -1425,8 +1425,10 @@ country_event = {
 				not = { has_planet_flag = str_good_habitability } 
 				nand = { 
 					has_planet_flag = str_did_terraforming 
-					not = { is_planet_class = pc_machine }	
-					not = { is_planet_class = pc_hive }
+					NOR = {
+						is_planet_class = pc_machine
+						is_planet_class = pc_hive
+					}
 				}
 				num_pops > 5
 			}

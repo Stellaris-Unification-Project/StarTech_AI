@@ -354,8 +354,10 @@ succession_type_random = {
 
 succession_type_strongest = {
 	potential = {
-		NOT = { has_federation_type = hegemony_federation }
-		NOT = { has_federation_flag = special_federation }
+		NOR = {
+			has_federation_type = hegemony_federation
+			has_federation_flag = special_federation
+		}
 	}
 	allow = {
 		custom_tooltip = {

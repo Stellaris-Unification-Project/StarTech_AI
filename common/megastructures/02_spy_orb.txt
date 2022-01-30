@@ -62,7 +62,7 @@ spy_orb_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"

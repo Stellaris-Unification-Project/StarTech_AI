@@ -349,10 +349,8 @@ tech_plasma_1 = {
 		factor = 2
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -412,10 +410,8 @@ tech_plasma_2 = {
 		factor = 2
 		modifier = {
 			factor = 400
-			NOT = {
+			NOR = {
 				has_tech_option = tech_energy_torpedoes_2
-			}
-			NOT = {
 				has_technology = tech_energy_torpedoes_2
 			}
 			has_technology = tech_energy_torpedoes_1
@@ -954,10 +950,8 @@ tech_mining_drone_weapon_1 = {
 	ai_weight = {
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}
@@ -1004,10 +998,8 @@ tech_space_cloud_weapon_1 = {
 		}
 		modifier = {
 			factor = 100
-			NOT = {
+			NOR = {
 				has_tech_option = tech_lasers_4
-			}
-			NOT ={
 				has_technology = tech_lasers_4
 			}
 		}

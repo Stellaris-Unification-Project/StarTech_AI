@@ -58,10 +58,7 @@ military_service_full = {
 			OR = {
 				is_same_species = from
 				from = {
-					NOR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = no
 				}
 			}
 		}

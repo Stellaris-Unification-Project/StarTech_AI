@@ -7,10 +7,7 @@ first_contact_event = {
 	desc = {
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = yes
 			}
 		}
 		text = story.201.desc.phile
@@ -19,10 +16,7 @@ first_contact_event = {
 	desc = {
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = yes
 			}
 		}
 		text = story.201.desc.phobe
@@ -31,10 +25,7 @@ first_contact_event = {
 	desc = {
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+				is_pacifist = yes
 			}
 		}
 		text = story.201.desc.pacif
@@ -43,10 +34,7 @@ first_contact_event = {
 	desc = {
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-				}
+				is_spiritualist = yes
 			}
 		}
 		text = story.201.desc.spiri
@@ -55,10 +43,7 @@ first_contact_event = {
 	desc = {
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
+				is_militarist = yes
 			}
 		}
 		text = story.201.desc.milit
@@ -68,16 +53,11 @@ first_contact_event = {
 		trigger = {
 			owner = {
 				NOR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
+					is_militarist = yes
+					is_spiritualist = yes
+					is_pacifist = yes
+					is_xenophobe = yes
+					is_xenophile = yes
 				}
 			}
 		}

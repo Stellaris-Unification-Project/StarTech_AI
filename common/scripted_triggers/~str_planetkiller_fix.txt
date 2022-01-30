@@ -125,7 +125,7 @@ can_destroy_planet_with_PLANET_KILLER_CRACKER = {
 				NOT = { exists = space_owner }
 				AND = {
 					exists = space_owner
-					space_owner = { is_same_empire = from.owner }
+					is_owned_by = from.owner
 				}
 			}
 			OR = {

@@ -3,10 +3,8 @@ rusher = {
 		has_ethic = ethic_fanatic_militarist
 		AND = {
 			has_ethic = ethic_militarist
-			NOT = {
+			NOR = {
 				has_ethic = ethic_materialist
-			}
-			NOT = {
 				has_ethic = ethic_fanatic_materialist
 			}
 		}
@@ -17,10 +15,8 @@ turtler = {
 	OR = {
 		AND = {
 			has_ethic = ethic_materialist
-			NOT = {
+			NOR = {
 				has_ethic = ethic_militarist
-			}
-			NOT = {
 				has_ethic = ethic_fanatic_militarist
 			}
 		}

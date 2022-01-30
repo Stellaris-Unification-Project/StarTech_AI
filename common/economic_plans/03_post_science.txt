@@ -237,7 +237,7 @@ middle_imperial_plan = {
 			str_raw_ecocrisis_level_1 = yes
 			str_consumer_goods_crisis_1 = yes
 			lategame = no
-			or = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist }
+			or = { is_pacifist = yes }
 		}
 	}
 
@@ -252,7 +252,7 @@ middle_imperial_plan = {
 				str_raw_ecocrisis_level_1 = yes
 				str_consumer_goods_crisis_1 = yes
 				lategame = no
-				or = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist }
+				or = { is_pacifist = yes }
 			}
 		}
 	}

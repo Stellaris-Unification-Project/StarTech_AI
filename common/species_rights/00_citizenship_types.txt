@@ -43,10 +43,7 @@ citizenship_full = {
 			OR = {
 				is_same_species = from
 				from = {
-					NOR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = no
 				}
 			}
 		}
@@ -263,11 +260,7 @@ citizenship_assimilation = {
 		modifier = {
 			factor = 0
 			from = {
-				OR = {
-					has_valid_civic = civic_hive_devouring_swarm
-					has_valid_civic = civic_fanatic_purifiers
-					has_valid_civic = civic_machine_terminator
-				}
+				is_homicidal = yes
 			}
 		}
 	}
@@ -414,10 +407,7 @@ citizenship_limited = {
 			factor = 0
 			from = {
 				has_valid_ai_personality = no
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = yes
 			}
 		}
 	}
@@ -489,10 +479,7 @@ citizenship_slavery = {
 		custom_tooltip = {
 			fail_text = empire_xenophile
 			from = {
-				NOR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = no
 			}
 		}
 		custom_tooltip = {
@@ -507,10 +494,8 @@ citizenship_slavery = {
 			from = {
 				allows_slavery = yes
 				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
+					is_xenophobe = yes
+					is_authoritarian = yes
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}
@@ -734,8 +719,10 @@ citizenship_purge = {
 			factor = 0
 			from = {
 				has_authority = auth_hive_mind
-				NOT = { has_valid_civic = civic_hive_devouring_swarm }
-				NOT = { has_origin = origin_necrophage }
+				NOR = {
+					has_valid_civic = civic_hive_devouring_swarm
+					has_origin = origin_necrophage
+				}
 				OR = {
 					has_valid_civic = civic_hive_one_mind
 					has_valid_civic = civic_hive_subsumed_will
